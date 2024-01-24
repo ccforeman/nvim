@@ -147,6 +147,11 @@ require("lazy").setup({
     },
     'mfussenegger/nvim-dap-python',
     'mortepau/codicons.nvim',
+    {
+        'akinsho/toggleterm.nvim',
+        version = "*", 
+        config = true
+    }
 
 })
 require("cforeman.set")
