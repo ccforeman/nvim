@@ -4,8 +4,9 @@ require("toggleterm").setup {
     direction = 'horizontal',
 }
 
--- require("toggleterm").setup {
---     size = 40,
---     open_mapping = [[<A-\>]],
---     direction = 'vertical',
--- }
+function _G.set_terminal_keymaps()
+    local opts = {buffer = 0}
+    vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
+end
+
+vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
