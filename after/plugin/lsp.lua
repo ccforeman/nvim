@@ -17,7 +17,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'pylsp', 'csharp_ls'},
+  ensure_installed = {'pylsp', 'omnisharp'},
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()
