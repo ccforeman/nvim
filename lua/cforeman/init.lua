@@ -17,7 +17,6 @@ require("lazy").setup({
 	"folke/which-key.nvim",
 	"theprimeagen/harpoon",
     {
-        
         "mortepau/codicons.nvim",
         lazy = false
     },
@@ -26,14 +25,20 @@ require("lazy").setup({
 		dependencies = { {'nvim-lua/plenary.nvim'} }
 	},
 	{
-		'rose-pine/neovim',
+		'catppuccin/nvim',
 		lazy = false, -- make sure we load this during startup if it is your main colorscheme
 		priority = 1000, -- make sure to load this before all the other start plugins
-		name = 'rose-pine',
-		config = function()
-			vim.cmd('colorscheme rose-pine')
-		end
+        name = 'catppuccin'
 	},
+	-- {
+	-- 	'rose-pine/neovim',
+	-- 	lazy = false, -- make sure we load this during startup if it is your main colorscheme
+	-- 	priority = 1000, -- make sure to load this before all the other start plugins
+	-- 	name = 'rose-pine',
+	-- 	config = function()
+	-- 		vim.cmd('colorscheme rose-pine')
+	-- 	end
+	-- },
 
 	{
 		'nvim-treesitter/nvim-treesitter',
