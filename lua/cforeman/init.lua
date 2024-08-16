@@ -154,7 +154,7 @@ require("lazy").setup({
     'mortepau/codicons.nvim',
     {
         'akinsho/toggleterm.nvim',
-        version = "*", 
+        version = "*",
         config = true
     }
 
