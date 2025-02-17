@@ -31,3 +31,7 @@ vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
 vim.g.python3_host_prog = "/home/cforeman/.pyenv/versions/neovim3/bin/python"
+
+vim.schedule(function()
+    vim.opt.clipboard = 'unnamedplus'
+end)
